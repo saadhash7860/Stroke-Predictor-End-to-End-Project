@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="content">
+        <center><h1 style="color: rgb(0, 255, 106);">Stroke Predictor</h1></center>
+    <style>
+        body {
+          background-image: url(' https://user-images.githubusercontent.com/65180814/112335679-70544300-8ce2-11eb-8cae-1f6c3525b00f.png');
+        }
+        </style>
+    </div>
+    <div class="form">
+        <form action="/predict" method="post">
+            <label for="gender">Enter your Gender:</label><br>
+            <select id="gender" name="gender">
+                <option value="select your gender">Select your gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="others">Other</option>
+              </select><br>
+            <label for="age">Enter your age:</label><br>
+            <input type="number" name="age" id="age"><br>
+            <label for="hypertension">Enter your hypertension value:</label><br>
+            <input type="number" name="hypertension" id="hypertension"><br>
+            <label for="heart_disease">Enter your heart_disease value:</label><br>
+            <input type="number" name="heart_disease" id="heart_disease"><br>
+            <label for="ever_married">Enter your Marital Status:</label><br>
+            <select id="ever_married" name="ever_married"><br>
+                <option value="select your ever_married Value:">Select your ever_married Value</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select><br>
+              <label for="work_type">Enter your work_type value:</label><br>
+              <select id="work_type" name="work_type">
+                <option value="select your work_type">Select your work_type </option>
+                <option value="Private">Private</option>
+                <option value="self-employed">Self-employed</option>
+                <option value="govt_job">Govt_job</option>
+                <option value="Children">children</option>
+                <option value="never_worked">Never_worked</option>
+              </select><br>
+              <label for="Residence_type">Enter your Residence_type:</label><br>
+              <select id="Residence_type" name="Residence_type">
+                <option value="select your residence_type">Residence_type Value:</option>
+                <option value="urban">Urban</option>
+                <option value="rural">Rural</option>
+              </select><br>
+              <label for="avg_glucose_level">Enter your Glucose Value:</label><br>
+              <input type="number" name="avg_glucose_level" id="avg_glucose_level"><br>
+              <label for="bmi">Enter your bmi Value:</label><br>
+              <input type="number" name="bmi" id="bmi"><br>
+              <label for="smoking_status">Enter your smoking_status:</label><br>
+              <select id="smoking_status" name="smoking_status">
+                <option value="select your smoking_status">smoking_status value:</option>
+                <option value="Formerly smoked	">formerly smoked</option>
+                <option value="Never smoked	">never smoked	</option>
+                <option value="Smokes">smokes</option>
+              </select><br>
+              <input type="submit" value="predict">
+        </form>
+
+    </div>
+    
+</div>
+</body>
+</html>
